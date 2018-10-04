@@ -61,7 +61,6 @@ In order to train a new model use the `train.py` script. Here is how one would t
 ```
 python train.py \
   --data data/negotiate \
-  --cuda \
   --bsz 16 \
   --clip 0.5 \
   --decay_every 1 \
@@ -88,7 +87,6 @@ To refine a pre-trained supervised model with a goal-based incentive, one could 
 ```
 python reinforce.py \
   --data data/negotiate \
-  --cuda \
   --bsz 16 \
   --clip 1 \
   --context_file data/negotiate/selfplay.txt \
